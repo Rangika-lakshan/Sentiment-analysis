@@ -18,3 +18,4 @@ Run the specific script using the following command:
 ```bash
 python script13.py
 ```
+![img.png](img.png)
