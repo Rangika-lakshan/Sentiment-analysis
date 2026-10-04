@@ -1,21 +1,19 @@
-# W3Schools Web Scraper
+# Hugging Face Sentiment Analysis
 
-A professional and clean Python web scraper built with requests and BeautifulSoup to extract titles and main paragraphs from W3Schools.
+A lightweight Python script that utilizes the Hugging Face `transformers` library to perform text-based sentiment analysis. It classifies input sentences as either `POSITIVE` or `NEGATIVE` along with a confidence score.
 
-##  Features
-- Fetches HTML data securely using proper headers.
-- Extracts main topic headers (`<h1>`) and text safely.
-- Implements error handling for internet connection failures.
+## Features
+- Implements the Hugging Face `pipeline` API for NLP.
+- Pre-trained models are automatically loaded (`distilbert-base-uncased-finetuned-sst-2-english`).
+- Processes a batch of sentences and prints formatted results.
+- Includes an interactive user input loop to test custom sentences in real-time.
 
-##  Requirements
-Before running the script, ensure you have the required libraries installed:
-```bash
-pip install requests beautifulsoup4
-```
-
-##  How to Run
-Run the specific script using the following command:
-```bash
-python script13.py
-```
-![img.png](img.png)
+## How to Run
+1. Install the required dependencies:
+   ```bash
+   pip install transformers torch
+   ```
+2. Run the analysis script:
+   ```bash
+   python script1.py
+   ```
